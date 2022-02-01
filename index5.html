@@ -2,37 +2,21 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Daily Practice website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>media query</title>
 </head>
 <style>
-	:root{
-		--bgColor: #63f700;
-		--btnseeting: 10px 30px;
-
-	}
-	h1 {
-		color: blue;
-		font-family: verdana;
-		font-size: 300%;
-		border: 2px solid powderblue;
-		padding: 30px;
-		margin: 50px;
-		background-color: var(--bgColor);
-	}
-	p {
-		color: red;
-		font-family: verdana;
-		font size: 200%;
-	}
-	button{
-		padding: var(--btnseeting);
-	}
+body {
+	background-color: lightgreen;
+}	
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
 </style>
-<body>
-	<h1>this is heading</h1>
-	<p>this is paragraph</p>
-	<button> Click Me </button>
 
+<body>
+<p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
 </body>
 </html>
